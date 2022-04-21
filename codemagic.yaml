@@ -20,7 +20,7 @@ definitions:
           --device "iPhone 11"
     - &build
       name: Run build 
-      script: xcodebuild build -workspace "$UpcomingMovies.xcworkspace" -scheme "UpcomingMovies" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=15.4' -configuration Debug CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO 
+      script: xcodebuild build -workspace "UpcomingMovies.xcworkspace" -scheme "UpcomingMovies" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=15.4' -configuration Debug CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO 
 workflows:
   ios-mac-pro-workflow:
     name: Mac Pro Workflow
